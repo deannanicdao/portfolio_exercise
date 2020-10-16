@@ -15,4 +15,12 @@ class QuotesController < ApplicationController
         @quotes == @@quotes
     end
 
+    def add_quotes
+        @@quotes.push(params[:quotes])
+    end
+
+    def def show
+        @quote = @@quotes[params[:id].to_i]
+    end
+
 end

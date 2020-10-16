@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   post 'quotes', to: 'pages#add_quotes'
   get 'quotes', to: 'quotes#show_quote'
+  get 'quotes/:id', to: 'quotes#show'
 
 end
