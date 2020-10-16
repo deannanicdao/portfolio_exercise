@@ -8,12 +8,14 @@ class PagesController < ApplicationController
     ]
 
     def contact
+        @path = true
     end
     
     def about
     end
 
     def home
+        @home = true
         # below data should be in a model
         
         
