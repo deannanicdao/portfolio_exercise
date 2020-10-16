@@ -23,4 +23,14 @@ class QuotesController < ApplicationController
         @quote = @@quotes[params[:id].to_i]
     end
 
+    def update
+        # render json: params
+        @@quotes[params[:id].to_i] = params[:quote]
+        redirect_to 'quotes'
+    end
+
+    def destroy
+        @@quotes.delete_at(params[:id].to_i)    
+        render json: @@quotes
+    end
 end

@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'contact', to: 'pages#contact'
   get 'about', to: 'pages#about'
-  post 'quotes', to: 'pages#add_quotes'
+
+  get 'quotes', to: 'quotes#index'
+  post 'quotes', to: 'quotes#add_quotes'
   get 'quotes', to: 'quotes#show_quote'
   get 'quotes/:id', to: 'quotes#show'
+  put 'quotes/:id', to: 'quotes#update'
+  delete 'quotes/:id', to: 'quotes#destroy'
 
 end
