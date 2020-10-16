@@ -1,8 +1,16 @@
-# any file with an underscore, rails will know it's a partial
+<!-- any file with an underscore, rails will know it's a partial -->
 
 <div>
+    <!-- Helper tag that does <a></a> tags -->
+    <!-- <%= link_to "label". "path" %> -->
+    <%= link_to "Home", root_path %>
+    <%= link_to "Contact", contact_path %>
+    <%= link_to "About", about_path %>
+    <%= link_to "Quotes", quotes_path %>
+
+    <!-- Replaced the a tags below with the links above
     <a href="/">Home</a>
     <a href="/home">Contact</a>
     <a href="/home">About</a>
-    <a href="/home">Quotes</a>
+    <a href="/home">Quotes</a> -->
 </div>

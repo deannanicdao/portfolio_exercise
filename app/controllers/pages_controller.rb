@@ -7,20 +7,31 @@ class PagesController < ApplicationController
         "Quote 5"
     ]
 
+    def index
+        @title = "Quotes"
+        @quotes = @@quotes
+    end
+
     def contact
-        @path = true
+        @title = "contact"
     end
     
     def about
+        @title = "about"
     end
 
     def home
+        @title = "home"
         @home = true
         # below data should be in a model
         
         
         # fetches from the model
         # gives that info to the view
+    end
+
+    def quotes
+        @title = "quotes"
     end
 
     def add_quotes

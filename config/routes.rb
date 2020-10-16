@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'about', to: 'pages#about'
 
-  get 'quotes', to: 'quotes#index'
+  get 'quotes', to: 'quotes#index', as: 'quotes'
   post 'quotes', to: 'quotes#add_quotes'
   get 'quotes', to: 'quotes#show_quote'
   get 'quotes/:id', to: 'quotes#show'
